@@ -64,7 +64,7 @@ func readLocations() error {
 }
 
 func randomizeCoordinate(c float64) string {
-	return fmt.Sprintf("%.2f", c+rand.Float64()/100.0)
+	return fmt.Sprintf("%.1f", c+rand.Float64()/1000.0)
 }
 
 func handleLocation(key, id string, lat, lon float64) error {
